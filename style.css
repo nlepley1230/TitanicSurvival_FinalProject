@@ -1,0 +1,28 @@
+body {
+    background-color: #080169;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    background-color: rgb(179, 179, 185);
+    color: #2d7997;
+
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(3, 100, 16);
+    
+}
+
+h3 {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(199, 195, 195);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
