@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Titanic Survival</title>
 
- <!-- Bootstrap Links -->
+  <!-- Bootstrap Links -->
 
  
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark primary">
         <a class="navbar-brand" href="index.html">Titanic Survival </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Main <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Dataset</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,9 +45,38 @@
               </li>
 
             <li class="nav-item">
-              <a class="nav-link"href="analysis.html">Analysis</a>
+              <a class="nav-link"href="finalanalysis.html">Final Analysis</a>
             </li>
           </ul>
           </div>
         </nav>
   <div class="container">
+
+<!--Summary-->
+<div class="row">
+  <div class="col-lg-12">
+      <div class="jumbotron jumbotron text-white">
+           <h1><b>Would You Have Survived the Sinking of the Titanic?</b></h1>
+           <p> 
+            <center> <img src="resource/images/titanichomepage.jpg" height="300" width="750"></center> 
+            <br><br>
+            <center> <a class="text-dark"> Group Members: Matt Godfrey, Anne Good, Nicole Lepley, Kendall McCroy, Mariano Rivera
+<br>
+<br>
+              For the final project of Data Science Boot Camp, our group used our new machine learning skills and applied them to a new dataset.
+              <br><br>
+              The dataset we used was from the infamous sinking of the Titanic in 1912. We found clean testing/training data that displayed which members survived and which ones didn't. 
+              <br><br>
+              Using the data and machine learning, we looked at different models for predicting who would hypothetically survive the sinking of the Titanic.
+              From there, we would conclude which model was more accurate at predicting.
+              <br><br>
+              Please click each model above to visualize which one was more accurate. 
+
+   </a>          
+   </p>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
