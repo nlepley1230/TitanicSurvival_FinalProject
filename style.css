@@ -26,3 +26,9 @@ h3 {
 
 
 }
+
+p {
+    text-align: center;
+    color: rgb(199, 195, 195);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
