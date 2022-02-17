@@ -27,7 +27,6 @@
 <html>
 
 <body>
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark primary">
     <a class="navbar-brand" href="index.html">Titanic Survival </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
@@ -59,10 +58,13 @@
 
         <li class="nav-item">
           <a class="nav-link" href="finalanalysis.html">Final Analysis</a>
+        <li class="nav-item">
+          <a class="nav-link" href="features.html">Model Features</a>
         </li>
       </ul>
     </div>
   </nav>
+
   <div class="container">
 
     <!--Summary-->
@@ -70,20 +72,29 @@
       <div class="col-lg-12">
         <div class="jumbotron jumbotron text-white">
           <h1><b>K Nearest Neighbor</b></h1>
-          <p>
-            <!-- <center> <img src="resource/images/titanichomepage.jpg" height="300" width="750"></center>  -->
-            <br><br>
 
-            <b>
-              <br><a class="text-dark"> 
-              The k-nearest neighbor (KNN) algorithm is a supervised machine learning algorithm. It is used to classify
+          <!-- <center> <img src="resource/images/titanichomepage.jpg" height="300" width="750"></center>  -->
+          <br><br>
+
+          <b>
+            <br><a class="text-dark">
+              The k-nearest neighbor (KNN) algorithm is a supervised machine learning algorithm. It is used for both
+              classification
               or for regression analysis. In the titanic survial project, we used it to classify whether the person
               would likely survive or perish if they were a passenger on the titanic.
               <br><br>
-              This algorithm considers the k nearest neighbors (data points) to predict the classification of the input datapoint. 
+              This algorithm considers the k nearest neighbors (data points) to predict the classification of the input
+              datapoint. It does this by selecting the specified number examples (k) closest to the query, and
+              determines the most frequent label.
               <br><br>
-              </a>
-          </p>
+              For the Titanic survial problem, we ran the KNN model for k, 1 to 20, to see which value of k is the most useful. 
+              <img src="resource/images/KNN.jpg">
+              <br><br>
+              Viewing the graph, we determined that 6 is the value of k that we would use to when running the KNeighborsClassifer. 
+              <br><br>
+              KNN was the least useful predictor for our project, since it scored 57% which is not much better than a coin toss. 
+            </a>
+
         </div>
       </div>
     </div>
