@@ -53,11 +53,12 @@
 
         <li class="nav-item">
           <a class="nav-link" href="finalanalysis.html">Final Analysis</a>
+        <li class="nav-item">
+          <a class="nav-link" href="features.html">Model Features</a>
         </li>
       </ul>
     </div>
   </nav>
-
 
   <!--Summary-->
   <div class="container">
@@ -83,10 +84,40 @@
               <li><b>fare</b> - Passenger fare</li>
               <li><b>cabin</b> - Cabin number</li>
               <li><b>embarked</b> - Port of Embarkation</li>
-            </ul>
+              <li><b>name</b> - Passenger Name</li>
 
+            </ul>
+            The training set included the “Survived” column (0 for perished, 1 for survived) to assist with the
+            supervised learning model. 
+            <br><br>
+            From the dataset, we determined our "features" for our machine learning models by including inputs that
+            would have an impact on a prediction. We also looked at the data quality in making the decision for choosing
+            the features.
+            <br><br>
+            Here are the features we selected:
+            <li><b>pclass</b> - Ticket Class - A proxy for socio-economic status</li>
+            <li><b>sex</b> - Gender</li>
+            <li><b>age</b> - Age in years</li>
+            <li><b>sibsp</b> - Number of siblings/ spouses aboard the Titanic</li>
+            <li><b>parch</b> - Number of parents/ children aboard the TItanic</li>
+            <li><b>fare</b> - Passenger fare</li>
+            We removed name, cabin, and embarked.
+            <br><br>
+            <b>Establish and clean the datasets</b>
+            <br>
+            Since the datasets were already in the x and y sets, we only needed to drop columns and reshape. We ensured that the target, the <b>survived</b> column, was in the y_train set.
+            We found 87 records without ages in the testing set, we needed to clean the notebook. 
+            <br><br>
+            <b>Encoding and Scaling</b>
+            <br>
+            Within the file, the Sex data values were male or female. To prep it for the model, we encoded the data using .get_dummies. 
+            We then needed to scale the data, using the StandardScaler(), so the factors could have the proper weighting on the model. 
+            <br><br>
+            Now our data is ready for our machine learning models! 
             <br><br>
             <br><br>
+            <br><br>
+            Data Source: https://www.kaggle.com/c/titanic/data 
           </a>
 
           </p>
