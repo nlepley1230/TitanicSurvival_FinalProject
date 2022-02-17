@@ -5,48 +5,107 @@
   <meta charset="utf-8">
   <title>Titanic Survival</title>
 
- <!-- Bootstrap Links -->
+  <!-- Bootstrap Links -->
 
- 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
 
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Support Vector Machine </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark primary">
+    <a class="navbar-brand" href="index.html">Titanic Survival </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <p>
-      Linear classifiers are often used to calculate a boudary between clumps of observations to then use when trying to classify a new data point. Should that new point fall on one side of the line, it would be classified one way, and on the other side it would be classified as something else. However, this gets a little tricky when there is not a clear line to be drawn that would constitute a proper boundary. 
-    </p>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Main <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Dataset</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Models
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="decision.html">Decision Tree</a>
+            <a class="dropdown-item" href="knearest.html">K Nearest Neighbors</a>
+            <a class="dropdown-item" href="logistic.html">Logistic Regression </a>
+            <a class="dropdown-item" href="forest.html">Random Forest</a>
+            <a class="dropdown-item" href="vector.html">Support Vector Machine</a>
+          </div>
+        </li>
 
-    <img src="https://miro.medium.com/max/1400/1*06GSco3ItM3gwW2scY6Tmg.png">
-      
-    <p>
-      Support Vector Machines (SVM) is an algorithm that we can use to better identify a boundary to classify a data point. Instead of a singular line, the SVM algorithm finds an optimal hyperplane in an N-dimensional space (N = the number of features) that separates the data points with the largest margin possible to distinctly classify them. The example above (from towardsdatascience.com) shows a 2 dimensional space with a number linear classifiers that could potetntially separate the data (left graph), but the SVM algorithm can provide the optimal plane of separation (right graph).
-    </p>
+        <li class="nav-item">
+          <a class="nav-link" href="finalanalysis.html">Final Analysis</a>
+        <li class="nav-item">
+          <a class="nav-link" href="features.html">Model Features</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-
-    <p>
-      After preprocessing our Titanic dataset, we trained an SVM classifier from the scikit-learn python package to classify people in the dataset on whether or not they survived the disaster. When testing this model, we received the following results:
-    </p>
-
-    <img src="resource/images/SVM_model_confusion_matrix.png">
-
-    <p>
-      Precision is the ratio of the correctly predicted positive (or negative) observations to the total predicted positive (or negative) observations. Based on the table above, this means that 67% of the people our model predicted to survive actually did, and 55% of the people our model predicted to die actually did. 
-      Recall is the ratio of the correctly predicted positive (or negative) observations to the total number of actual positive (or negative) observations. Based on our results, this means that our model correctly classified 83% of the actual survivors in the dataset, and 33% of the people who died. 
-      The F1-Score is the harmonic average of the precision and recall scores. An f1-score reaches its best value at 1 and worst value at 0. Overall, it appears the SVM model is much better at predicting those who would survive the disaster than who would not.
-    </p>
-    <p>
-      The last result presented in the table above is the accuracy score of the SVM model. The accuracy score of 0.64 means that overall, our model made correct predictions of the data 64% of the time.
-    </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="jumbotron jumbotron text-white">
+          <h1><b>Support Vector Machine</b></h1>
+            <!-- <center> <img src="resource/images/titanichomepage.jpg" height="300" width="750"></center>  -->
+            <br>
+            <a class="text-dark">
+              Linear classifiers are often used to calculate a boudary between clumps of observations to then use when trying to classify a new data point. Should that new point fall on one side of the line, it would be classified one way, and on the other side it would be classified as something else. However, this gets a little tricky when there is not a clear line to be drawn that would constitute a proper boundary.
+            </a>
+            <br>
+            <br>
+            <figure>
+            <center><img src="https://miro.medium.com/max/1400/1*06GSco3ItM3gwW2scY6Tmg.png" height="300px", width="600px"></center>
+            <center><figcaption class="text-dark">(image from towardsdatascience.com)</figcaption></center>
+          </figure>
+            <br>
+            <a class="text-dark">
+              Support Vector Machine (SVM) is an algorithm that we can use to better identify a boundary to classify a data point. Instead of a singular line, the SVM algorithm finds an optimal hyperplane in an N-dimensional space (N = the number of features) that separates the data points with the largest margin possible to distinctly classify them. The example above shows a 2 dimensional space with a number linear classifiers that could potetntially separate the data (left graph), but the SVM algorithm can provide the optimal plane of separation (right graph).
+            </a>
+            <br>
+            <br>
+            <br>
+            <a class="text-dark">
+              After preprocessing our Titanic dataset, we trained an SVM classifier from the scikit-learn python package to classify people in the dataset on whether or not they survived the disaster. When testing this model, we received the following results:
+            </a>
+            <br>
+            <br>
+            <center><img src="resource/images/SVM_model_confusion_matrix.png" height="125px" , width="500px"></center>
+            <br>
+            <a class="text-dark">
+              Precision is the ratio of the correctly predicted positive (or negative) observations to the total predicted positive (or negative) observations. Based on the table above, this means that 67% of the people our model predicted to survive actually did, and 55% of the people our model predicted to die actually did. Recall is the ratio of the correctly predicted positive (or negative) observations to the total number of actual positive (or negative) observations. Based on our results, this means that our model correctly classified 83% of the actual survivors in the dataset, and 33% of the people who died. The F1-Score is the harmonic average of the precision and recall scores. An f1-score reaches its best value at 1 and worst value at 0. Overall, it appears the SVM model is much better at predicting those who would survive the disaster than who would not.
+            </a>
+            <br>
+            <br>
+            <a class="text-dark">
+              The last result presented in the table above is the accuracy score of the SVM model. The accuracy score of 0.64 means that overall, our model made correct predictions of the data 64% of the time.
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
+</html>
