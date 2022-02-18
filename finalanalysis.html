@@ -71,23 +71,48 @@
           <a class="text-dark">
             The goal of this project was to test five machine learning models on how accurately they could predict
             whether or not a person would survive or die during the sinking of the titanic. As such, after training and testing
-            each of our models we compared each of their accuracy scores. Here is a table of the results:
+            each of our models we compared each of their accuracy scores. As the results show, the logistic regression classifier was the most accurate of the models we trained, and K-Nearest Neighbors was the least. Here is a table of the results:
           </a>
           <br>
           <br>
-          <center> <img src="resource/images/acc_score_table.png" height="250" width="300">
-          </center>
+          <center> <img src="resource/images/acc_score_table.png" height="250" width="300"></center>
           <br>
-
           <a class="text-dark">
-            As you can see, the logistic regression classifier was the most accurate of the models we trained, and
-            K-Nearest Neighbors was the least. After finding the most accurate classifier, we decided to put our own information
-            and some characters from the film into our model to predict whether or not we would have survived or died. Here
-            are the results:
+            While cleaning the data we noticed that there were many null values for age in the dataset. Since we thought age may be an important feature, we wanted to keep it in our models but had to consider different ways to deal with the null age values. In our primary analysis (results presented above), we decided to simply remove all rows in the dataset that contained null age values. As a secondary analysis, instead of dropping null age values, we wanted to see how our models would perform if we replaced them with random age values. We used the maximum and minimum ages in the dataset to determine the range of values to randomly pick from. We then used this dataset to train and test the top three most accurate models from our primary analysis. After comparing the accuracy scores of the new models, the random forest classifier was the most accurate we tested. Here is a table of those results:
           </a>
           <br>
           <br>
-          <center> <img src="resource/images/predictions.png" height="300" width="750"></center>
+          <center> <img src="resource/images/acc_score_table_random_age.png" height="200" width="280"></center>
+          <br>
+          <a class="text-dark">
+            After finding the most accurate classifiers, we decided to put our own information
+            and some characters from the film (Rose and Jack) into our models and predict whether or not we would have survived or died. Here are the results (the logistic regression model has null ages removed, the random forest model has null ages replaced with random ages):
+          </a>
+          <br>
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <center> <img src="resource/images/lr_predictions_1.png" height="600" width="400"></center>
+              </div>
+              <div class="col-md-6">
+                <center> <img src="resource/images/rf_predictions_1.png" height="600" width="400"></center>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                <center> <img src="resource/images/lr_predictions_2.png" height="450" width="470"></center>
+              </div>
+              <div class="col-md-6">
+                <center> <img src="resource/images/rf_predictions_2.png" height="450" width="470"></center>
+              </div>
+            </div>
+          </div>
+          <br>
+          <a class="text-dark">
+            Do you see any patterns?
+          </a>
           <br>
           <br>
           <a class="text-dark">
