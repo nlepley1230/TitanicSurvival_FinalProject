@@ -5,15 +5,22 @@
   <meta charset="utf-8">
   <title>Titanic Survival</title>
 
- <!-- Bootstrap Links -->
+  <!-- Bootstrap Links -->
 
- 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </head>
 
@@ -58,87 +65,63 @@
     </div>
   </nav>
 
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Main <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Dataset</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"href="features.html">Model Features</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Models
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="decision.html">Decision Tree</a>
-              <a class="dropdown-item" href="knearest.html">K Nearest Neighbors</a>
-              <a class="dropdown-item" href="logistic.html">Logistic Regression </a>
-              <a class="dropdown-item" href="forest.html">Random Forest</a>
-              <a class="dropdown-item" href="vector.html">Support Vector Machine</a>
-            </div>
-          </li>
-  
-          <li class="nav-item">
-            <a class="nav-link" href="finalanalysis.html">Final Analysis</a>
-
-            </li>
-          </ul>
-          </div>
-        </nav>
+  <!--Summary-->
   <div class="container">
-
-          <!--Summary-->
     <div class="row">
       <div class="col-lg-12">
         <div class="jumbotron jumbotron text-white">
           <h1><b>Model Features</b></h1>
-      <p><a class="text-dark"> 
-        When we decided on doing the Titanic for our project we looked into what we thought were the main variables of survival.
-        The datasets we found were already broken up into training and testing for machine learning.
-        These graphs were created using the combined data of both data sets with matplotlib and seaborn.
-        A majority of the passengers boarded in South Hampton, so I filled in the two missing values as such. 
-      </p>
-      <br>
-      <br>
-      <br>
-      <center><h2>Embarking Location</h2></center>
-      
-        <center><img src="resource/images/Embarked_Survived.jpg">
-      <p><a class="text-dark"> 
-        The bar graph shows the number of passengers that survived or perished from each embarking location.
-        (Survived is 1 and perished is 0)
-      </p>
-      <center><img src="resource/images/Embarked_Survival_PieGraph.jpg">
-      <p><a class="text-dark"> 
-        This pie graph shows the percentage of survivors from each embarking location: Cherbourg, Queenstown and South Hampton.
-      </p>
-      <br>
-      <br>
-      <br>
-      <center><h2>Age</h2></center>
-      
-        <center><img src="resource/images/Histogram_didn't_survive_age.jpg"><img src="resource/images/Histogram_survived_by_age.jpg">
-      <p><a class="text-dark"> 
-        These histograms show survival and perishing counts by age.
-      </p>
-      <br>
-      <br>
-      <br>
-      <center><h2>Passenger Class (Pclass)</h2></center>
-      
-        <center><img src="resource/images/PClass_Sutvival_Heatmap.jpg">
-      <p><a class="text-dark"> 
-        This heatmap helps determine if the higher-class passengers (Class 1) had a higher rate of survival than the lower classes (Class 2 or 3).
-        It implies that passenger class contributed to a passenger’s survival.
-        (Survived is 1 and perished is 0)
-      </p>
-      <center><img src="resource/images/Sex_Survival_Graphs.jpg">
-      <p><a class="text-dark"> 
-        Survival rate of males is around 20%, whereas women is around 75%.
-        Passenger gender played an important role in determining if one was going to survive (1) or perish (0).
-  
-  </body> 
+          <p><a class="text-dark">
+              When we decided on doing the Titanic for our project, we looked into what we thought were the main
+              variables of survival.
+              These graphs were created using the combined data of both data sets with matplotlib and seaborn.
+              A majority of the passengers boarded in South Hampton, so we filled in the two missing values as such.
+          </p>
+          <br>
+
+          <h2>Embarking Location</h2>
+
+
+          <img src="resource/images/Embarked_Survived.jpg">
+          <p><a class="text-dark">
+              The bar graph shows the number of passengers that survived or perished from each embarking location.
+              (Survived is 1 and perished is 0).
+          </p><br>
+          <img src="resource/images/Embarked_Survival_PieGraph.jpg">
+          <p><a class="text-dark">
+              This pie graph shows the percentage of survivors from each embarking location: Cherbourg, Queenstown
+              and South Hampton.
+          </p>
+          <br>
+          <br>
+
+          <h2>Age</h2>
+
+
+          <img src="resource/images/Histogram_didn't_survive_age.jpg"><img
+            src="resource/images/Histogram_survived_by_age.jpg">
+          <p><a class="text-dark">
+              These histograms show survival and perishing counts by age.
+          </p>
+          <br>
+          <br>
+
+          <h2>Passenger Class (Pclass)</h2>
+
+
+          <img src="resource/images/PClass_Sutvival_Heatmap.jpg">
+          <p><a class="text-dark">
+              This heatmap helps determine if the higher-class passengers (Class 1) had a higher rate of
+              survival than the lower classes (Class 2 or 3).
+              It implies that passenger class contributed to a passenger’s survival.
+              (Survived is 1 and perished is 0)
+          </p><br>
+          <img src="resource/images/Sex_Survival_Graphs.jpg">
+          <p><a class="text-dark">
+              Survival rate of males is around 20%, whereas the survival rate for females is around 75%.
+              Passenger gender played an important role in determining if one was going to survive (1) or
+              perish (0).
+
+</body>
+
+</html>
