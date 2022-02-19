@@ -36,6 +36,8 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="data.html">Dataset</a>
+        <li class="nav-item">
+          <a class="nav-link" href="features.html">Model Features</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -53,8 +55,6 @@
 
         <li class="nav-item">
           <a class="nav-link" href="finalanalysis.html">Final Analysis</a>
-        <li class="nav-item">
-          <a class="nav-link" href="features.html">Model Features</a>
         </li>
       </ul>
     </div>
@@ -69,62 +69,113 @@
         <div class="col-lg-12">
           <!-- <center> <img src="resource/images/titanichomepage.jpg" height="300" width="750"></center>  -->
           <br><br>
+          <h2>Gathering the data</h2>
           <br><a class="text-dark">
-            Before we cleaned the data, there were 2 main files from our data source, the training set and the testing
-            set.<br><br>
-            The data files included the following information:
-            <br>
-            <ul>
-              <li><b>pclass</b> - Ticket Class - A proxy for socio-economic status</li>
-              <li><b>sex</b> - Gender</li>
-              <li><b>age</b> - Age in years</li>
-              <li><b>sibsp</b> - Number of siblings/ spouses aboard the Titanic</li>
-              <li><b>parch</b> - Number of parents/ children aboard the TItanic</li>
-              <li><b>ticket</b> - Ticket Number</li>
-              <li><b>fare</b> - Passenger fare</li>
-              <li><b>cabin</b> - Cabin number</li>
-              <li><b>embarked</b> - Port of Embarkation</li>
-              <li><b>name</b> - Passenger Name</li>
+            We found the Titanic data set on <a href=https://www.kaggle.com/c/titanic/data>Kaggle</a><a
+              class="text-dark">. The data sets were already split into the test and training set. But we found that
+              data cleaning was still necessary before we could properly run
+              machine learning algorithms.
+              <br><br>
+              The data files included the following information:
+              <br>
 
-            </ul>
-            The training set included the “Survived” column (0 for perished, 1 for survived) to assist with the
-            supervised learning model. 
-            <br><br>
-            From the dataset, we determined our "features" for our machine learning models by including inputs that
-            would have an impact on a prediction. We also looked at the data quality in making the decision for choosing
-            the features.
-            <br><br>
-            Here are the features we selected:
-            <li><b>pclass</b> - Ticket Class - A proxy for socio-economic status</li>
-            <li><b>sex</b> - Gender</li>
-            <li><b>age</b> - Age in years</li>
-            <li><b>sibsp</b> - Number of siblings/ spouses aboard the Titanic</li>
-            <li><b>parch</b> - Number of parents/ children aboard the TItanic</li>
-            <li><b>fare</b> - Passenger fare</li>
-            We removed name, cabin, and embarked.
-            <br><br>
-            <b>Establish and clean the datasets</b>
-            <br>
-            Since the datasets were already in the x and y sets, we only needed to drop columns and reshape. We ensured that the target, the <b>survived</b> column, was in the y_train set.
-            We found 87 records without ages in the testing set, we needed to clean the notebook. 
-            <br><br>
-            <b>Encoding and Scaling</b>
-            <br>
-            Within the file, the Sex data values were male or female. To prep it for the model, we encoded the data using .get_dummies. 
-            We then needed to scale the data, using the StandardScaler(), so the factors could have the proper weighting on the model. 
-            <br><br>
-            Now our data is ready for our machine learning models! 
-            <br><br>
-            <br><br>
-            <br><br>
-            Data Source: https://www.kaggle.com/c/titanic/data 
-          </a>
 
-          </p>
+              <br>
+              <table class="table">
+                <thead class="table-light"></thead>
+                <tr>
+                  <th scope="col">Field Name</th>
+                  <th scope="col">Field Description</th>
+                  <tbody>
+                </tr>
+                <tr>
+                  <td>pclass</th>
+                  <td>Ticket Class - A proxy for socio-economic status</th>
+                </tr>
+                <tr>
+                  <td>sex</th>
+                  <td>Gender of the passenger</th>
+                </tr>
+                <tr>
+                  <td>age</th>
+                  <td>Age of the passenger in years</th>
+                </tr>
+                <tr>
+                  <td>sibsp</th>
+                  <td>Number of siblings/ spouses aboard the Titanic of the passenger</th>
+                </tr>
+                <tr>
+                  <td>parch</th>
+                  <td>Number of parents/ children aboard the TItanic of the passenger</th>
+                </tr>
+                <tr>
+                  <td>ticket</th>
+                  <td>Ticket Number of the passenger</th>
+                </tr>
+                <tr>
+                  <td>fare</th>
+                  <td>Amount of the ticket fare of the passenger in dollars</th>
+                </tr>
+                <tr>
+                  <td>cabin</th>
+                  <td>Cabin number of the passenger</th>
+                </tr>
+                <tr>
+                  <td>embarked</th>
+                  <td>Port of Embarkation of the passenger</th>
+                </tr>
+                <tr>
+                  <td>name</th>
+                  <td>Name of the passenger</th>
+                </tr>
+                </tbody>
+              </table>
+
+              <br><br>
+
+
+              The training set included the “Survived” column (0 for perished, 1 for survived) to assist with the
+              supervised learning model.
+              <br><br>
+              From the dataset, we determined our "features" for our machine learning models by including inputs that
+              would have an impact on our prediction. We also looked at the data quality in making the decision for
+              choosing the features.
+              <br><br>
+              Here are the features we selected:
+              <li><b>pclass</b> </li>
+              <li><b>sex</b> </li>
+              <li><b>age</b> </li>
+              <li><b>sibsp</b> </li>
+              <li><b>parch</b></li>
+              <li><b>fare</b> </li>
+              We removed name, cabin, and embarked, since these data elements did have an impact on the prediction.
+              <br><br>
+              <h2>Establish and clean the datasets</h2>
+              <br>
+              Since the datasets were already in the x and y sets, we only needed to drop columns and reshape. We
+              ensured
+              that the target, the <b>survived</b> column, was in the y_train set.
+              We found 87 records without ages in the testing set, we needed to clean the notebook.
+              <br><br>
+              <h2>Encoding and Scaling</h2>
+              <br>
+              Within the file, the Sex data values were male or female. To prep it for the model, we encoded the data
+              using .get_dummies.
+              We then needed to scale the data, using the StandardScaler(), so the factors could have the proper
+              weighting
+              on the model.
+              <br><br>
+              <b>Now our data is ready for our machine learning models!</b>
+              <br><br>
+
+              Data Source: https://www.kaggle.com/c/titanic/data
+            </a>
+
+            </p>
         </div>
       </div>
     </div>
   </div>
   </div>
-
+</body>
 </html>
